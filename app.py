@@ -4,7 +4,7 @@ from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request, send_from_directory
 
-from edital.answer import answer
+from edital.answer import answer, generation_status
 from edital.corpus import CorpusError, load_corpus
 from edital.search import SearchIndex, SemanticUnavailable
 
@@ -39,11 +39,12 @@ def create_app(index=None, root=ROOT):
     def documents():
         idx = get_index()
         return jsonify(documents=idx.corpus['documents'], warnings=idx.corpus.get('warnings', []),
+                       generation=generation_status(),
                        semantic_installed=bool(idx.model_path and (idx.model_path / 'config.json').exists()))
 
     @app.get('/api/health')
     def health():
-        return jsonify(status='ok', documents=len(get_index().corpus['documents']))
+        return jsonify(status='ok', documents=len(get_index().corpus['documents']), generation=generation_status())
 
     @app.get('/documents/<document_id>.pdf')
     def pdf(document_id):

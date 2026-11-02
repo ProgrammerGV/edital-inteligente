@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:08,000
+Geração experimental com Llama 3.2 3B. Exemplo de desenvolvimento: citação sobre recesso. Capturas reais, sem gravação contínua.
+
+2
+00:00:08,000 --> 00:00:16,000
+Vale-refeição: recusa pelo filtro, sem chamada ao LLM. Teste reservado: 4/10 respostas corretas e 6/6 casos ausentes recusados.

@@ -4,34 +4,39 @@
     "title": "IFBA DGCOM — Estágio superior 01/2025",
     "url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
     "note": "Snapshot histórico para estudo; verificar retificações no órgão.",
-    "sha256": "b671cdc68c7e403ba5f8f1df77d5bad26bba33f0969419d9d279fc4505283ce9"
+    "sha256": "b671cdc68c7e403ba5f8f1df77d5bad26bba33f0969419d9d279fc4505283ce9",
+    "document_type": "opening_notice"
   },
   {
     "id": "ifbaiano-itapetinga-2026",
     "title": "IF Baiano Itapetinga — Estágio 09/2026",
     "url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
     "note": "Snapshot histórico para estudo; não representa oportunidade aberta.",
-    "sha256": "f0eaf94a948ddd5b91ecaa63fb074ab5834969dd1f0b3f59ed7212cd3b79647f"
+    "sha256": "f0eaf94a948ddd5b91ecaa63fb074ab5834969dd1f0b3f59ed7212cd3b79647f",
+    "document_type": "opening_notice"
   },
   {
     "id": "ifbaiano-bonfim-2026",
     "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
     "url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
     "note": "Snapshot histórico para estudo; não representa oportunidade aberta.",
-    "sha256": "8936c66424a72db80d68a0ca0a5716fd7012927f94da9fc503a1d9bde8a0e68c"
+    "sha256": "8936c66424a72db80d68a0ca0a5716fd7012927f94da9fc503a1d9bde8a0e68c",
+    "document_type": "opening_notice"
   },
   {
     "id": "ifbaiano-serrinha-2026",
     "title": "IF Baiano Serrinha — Estágio 12/2026",
     "url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
     "note": "Snapshot histórico para estudo; não representa oportunidade aberta.",
-    "sha256": "001d66a4aef824151d0c903bbfeed57f2b3a660f22384fd355d4035b85afb326"
+    "sha256": "001d66a4aef824151d0c903bbfeed57f2b3a660f22384fd355d4035b85afb326",
+    "document_type": "opening_notice"
   },
   {
     "id": "ifba-simoes-filho-2026",
     "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
     "url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
     "note": "Versão retificada do edital. Snapshot histórico para estudo.",
-    "sha256": "6cd8b9e74cc8ddf5be386630fb133b5ef28ec3d4b747551239d3fc4750920394"
+    "sha256": "6cd8b9e74cc8ddf5be386630fb133b5ef28ec3d4b747551239d3fc4750920394",
+    "document_type": "opening_notice"
   }
 ]

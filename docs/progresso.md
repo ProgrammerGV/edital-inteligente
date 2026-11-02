@@ -8,13 +8,15 @@ Atualização: 02/11/2026. Estados: **A fazer → Em andamento → Em validaçã
 | Corpus de cinco editais | Concluído | `data/manifest.json`, hashes, 55 páginas e 225 trechos |
 | Busca por palavras | Concluído | Implementação e relatório de teste: Hit@3 15/15 |
 | Busca semântica local | Concluído | MiniLM em CPU; relatório de teste: Hit@3 14/15 |
-| API e casos de falha | Concluído | 24 testes aprovados; contratos, fontes por página e entrega do PDF |
-| Avaliação final | Concluído | `reports/test-results.json`, com 20 casos, sem notas de resposta inventadas |
+| API e casos de falha | Concluído | 36 testes aprovados; contratos, fontes por página e entrega do PDF |
+| Avaliação final de recuperação | Concluído | `reports/test-results.json`, com 20 casos, sem notas de resposta inventadas |
 | Artigo técnico | Concluído | `docs/artigo.md`, incluindo falhas de ausência de resposta |
 | Interface e demonstração | Em validação | Interface consultada com TF-IDF e MiniLM; vídeo em sequência de capturas reais. Conferência pessoal de Gabriel pendente |
-| Geração com Llama 3.2 | A fazer | Ollama não instalado; executar integração real e avaliar relevância das citações |
-| Revisão humana das respostas | A fazer | Depende de geração real; preencher corretude e sustentação, sem presumir notas |
-| Detecção de informação ausente | A fazer | Criar novos exemplos de desenvolvimento e um novo conjunto final antes de ajustar |
+| Execução e avaliação do LLM | Concluído | Ollama local, 1B e 3B executados; `reports/test-rag-v2-3b.json` |
+| Qualidade da geração | A fazer | 4/10 respostas corretas; três citações inadequadas e três recusas indevidas. Geração experimental, desativada por padrão |
+| Revisão assistida das respostas | Concluído | 12 casos de desenvolvimento por método e 16 finais; revisão identificada como assistência de IA |
+| Revisão humana independente | A fazer | Gabriel conferir respostas, fontes e gabaritos; não confundir com as notas assistidas |
+| Experimento de informação ausente | Concluído | Novos conjuntos v2 congelados; 6/6 recusas corretas por regras, filtro e modelo. Resultado limitado ao conjunto |
 | Domínio do projeto para entrevista | Em andamento | Gabriel explicar código, métricas, limites e uma falha, sem apoio do assistente |
 
 ## Marcos
@@ -29,4 +31,8 @@ As entregas de software foram antecipadas nesta implementação; os marcos conti
 
 ## Acompanhamento público
 
-As [12 issues](https://github.com/ProgrammerGV/edital-inteligente/issues?q=is%3Aissue) contêm requisito, prazo, aceite e evidência. O GitHub Project não foi criado porque a autenticação disponível não possui permissão `project`. Os estados continuam registrados em cada issue e nesta página; nenhuma permissão foi ampliada automaticamente.
+As [13 issues](https://github.com/ProgrammerGV/edital-inteligente/issues?q=is%3Aissue) contêm requisito, prazo, aceite e evidência. O GitHub Project não foi criado porque a autenticação disponível não possui permissão `project`. Os estados continuam registrados em cada issue e nesta página; nenhuma permissão foi ampliada automaticamente.
+
+## Resultado da geração v2
+
+A busca permanece como entrega principal. A integração real foi executada, mas a qualidade de resposta precisa melhorar antes de apresentar RAG completo. [Artigo e análise das falhas](rag-local.md). Os relatórios antigos e a tag `v0.1-retrieval` preservam a avaliação v1.

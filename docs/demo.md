@@ -1,5 +1,15 @@
 # Demonstração: consulta com evidências
 
+## v2 — experimento de geração
+
+O modo principal continua sendo busca. Para testar a geração, confira `scripts/doctor.py` e marque a opção de modelo local. A interface a deixa desativada por padrão por causa dos erros medidos.
+
+`rag-demo.mp4` contém duas capturas reais de desenvolvimento, oito segundos por cena, sem gravação contínua: consulta sobre recesso e recusa de vale-refeição pelo filtro de candidatos (sem chamada ao LLM nessa recusa). `rag-demo.srt` descreve as cenas. Não é vídeo de desempenho nem representação dos 16 casos finais. O exemplo positivo levou 54,9 segundos incluindo o primeiro preparo semântico na aplicação; o corte de oito segundos não representa essa espera.
+
+Esses exemplos não substituem o resultado final: **4/10 perguntas respondíveis atendidas corretamente**, três citações inadequadas e três recusas indevidas; **6/6 casos sem resposta recusados**. Veja a [análise completa](rag-local.md). Capturas em `rag-demo.png` e `rag-no-answer.png`.
+
+## v1 — busca avaliada
+
 1. Inicie a aplicação e mostre os cinco documentos e o aviso de corpus histórico.
 2. Selecione “IFBA DGCOM — Estágio superior 01/2025”.
 3. Pergunte “Qual é o valor mensal da bolsa para vinte horas semanais?” usando TF-IDF.

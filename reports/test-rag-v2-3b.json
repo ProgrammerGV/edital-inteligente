@@ -1,0 +1,1104 @@
+{
+  "created_at": "2026-11-02T17:20:22.804466+00:00",
+  "split": "test-v2",
+  "question_sha256": "f074109d7d1a938d8c6d4dbe329a237984a896918e0430fbb767f1d56cecb0a5",
+  "corpus_sha256": "032ce5b946fd86fbc82e6e9b846460f89726b50d7e4e38734b7be0341be30be2",
+  "model": "llama3.2:3b",
+  "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "implementation_sha256": {
+    "edital/answer.py": "b7dec5a689cf4c31896f75d26bd5ed205a36b511a90ca4d72592ced7103821d0",
+    "edital/evidence.py": "a7ca3d06666bdce5237b80d0ad14f690870c030dfe384aa80fd614b682269ef8",
+    "edital/search.py": "4b12462b8c770c11f771b005bcd906e839238d5c6e72157fba238d7ce4435732"
+  },
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "evaluation_kind": "generated citations; review by assistant is not independent human review",
+  "scope": "Documento pré-selecionado; corpus de editais de abertura.",
+  "methods": {
+    "tfidf": {
+      "preparation_ms": 24787.53,
+      "rows": [
+        {
+          "id": "test-v2-01",
+          "document_id": "ifba-dgcom-2025",
+          "question": "Como preencher o assunto do email para enviar a inscrição?",
+          "answerable": true,
+          "expected_pages": [
+            2
+          ],
+          "expected_answer": "SELEÇÃO ESTÁGIO + (vaga a que concorre).",
+          "result": {
+            "question": "Como preencher o assunto do email para enviar a inscrição?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "As documentações listadas no item 3.2 devem ser enviadas por e-mail para dgcom@ifba.edu.br, com o campo assunto preenchido com “SELEÇÃO ESTÁGIO + (vaga a que concorre)”. 3.4. Os documentos escaneados devem constar no mesmo e único e-mail. 4. [1]",
+            "sources": [
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 2,
+                "text": "As documentações listadas no item 3.2 devem ser enviadas por e-mail para dgcom@ifba.edu.br, com o campo assunto preenchido com “SELEÇÃO ESTÁGIO + (vaga a que concorre)”. 3.4. Os documentos escaneados devem constar no mesmo e único e-mail. 4.",
+                "id": "ifba-dgcom-2025:p2",
+                "score": 0.078921,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p2:w150"
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 3,
+                "text": "Os resultados de cada etapa, bem como o resultado final do Processo Seletivo Público, serão divulgados nas datas previstas no cronograma, (item 5) no endereço eletrônico https://portal.ifba.edu.br/dgcom/editais/editais. EVENTO DATA 1 Publicação do Edital 02/01/2025 2 Prazo de impugnação do Edital 03 a 06/01/2025 3 Inscrições 07/01 a 16/02/2025 4 Análise de documentos 17/02/2025 5 Resultado Preliminar da análise de documentos e convocação para entrevista individual e atividade prática 18/02/2025 6 Período para interposição de recurso da etapa 5 (Anexo V) e envio de documentação complementar por e-mail para dgcom@ifba.edu.br, com o assunto \"SELEÇÃO ESTÁGIO -",
+                "id": "ifba-dgcom-2025:p3",
+                "score": 0.068958,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p3:w150"
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 4,
+                "text": "7. DA CONTRATAÇÃO 7.1. Serão convocados a firmarem Termo de Compromisso de Estágio, em concordância ao disposto na Lei nº 11.788/2008, os candidatos aprovados neste Processo Seletivo Público, respeitada a ordem de classificação final e o número de vagas disponíveis ou que venham a surgir na DGCOM ou em outra unidade administrativa da Reitoria do IFBA, mediante solicitação durante o prazo de validade definido neste Edital. 7.2. Na ocasião da apresentação do(a) candidato(a) aprovado(a) para a sua contratação, o estudante deverá enviar digitalizados, em PDF ÚNICO , os documentos ao e-mail da DGCOM. Os documentos",
+                "id": "ifba-dgcom-2025:p4",
+                "score": 0.057244,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p4:w0"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "As documentações listadas no item 3.2 devem ser enviadas por e-mail para dgcom@ifba.edu.br, com o campo assunto preenchido com “SELEÇÃO ESTÁGIO + (vaga a que concorre)”. 3.4. Os documentos escaneados devem constar no mesmo e único e-mail. 4.",
+                "source_id": "ifba-dgcom-2025:p2"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 14684693500,
+              "load_duration": 26604300,
+              "prompt_eval_count": 684,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 19376.48
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": 1,
+          "review_notes": "Citação compatível com o gabarito e encontrada na página original. Gabarito congelado: SELEÇÃO ESTÁGIO + (vaga a que concorre).",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-02",
+          "document_id": "ifba-dgcom-2025",
+          "question": "Em qual setor devem ser entregues os originais dos documentos para contratação?",
+          "answerable": true,
+          "expected_pages": [
+            4
+          ],
+          "expected_answer": "DGP - COTEMP.",
+          "result": {
+            "question": "Em qual setor devem ser entregues os originais dos documentos para contratação?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "COMPROVANTE DE RESIDÊNCIA; COMPROVANTE DE MATRÍCULA ATUAL, contendo as seguintes informações: - Nome, CNPJ e endereço com CEP da instituição de ensino; - Assinatura e carimbo do responsável pela instituição; - Nº de matrícula e nome do curso. [1]",
+            "sources": [
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 4,
+                "text": "COMPROVANTE DE RESIDÊNCIA; COMPROVANTE DE MATRÍCULA ATUAL, contendo as seguintes informações: - Nome, CNPJ e endereço com CEP da instituição de ensino; - Assinatura e carimbo do responsável pela instituição; - Nº de matrícula e nome do curso.",
+                "id": "ifba-dgcom-2025:p4",
+                "score": 0.206289,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p4:w75"
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 2,
+                "text": "documentos são necessários para a realização da inscrição: a) Ficha de Inscrição (Anexo I), devidamente preenchida e assinada; b) Currículo (contendo as orientações do Anexo II); c) Portfólio para vagas de Produção Audiovisual. 3.3. As documentações listadas no item 3.2 devem ser enviadas por e-mail para dgcom@ifba.edu.br, com o campo assunto preenchido com “SELEÇÃO ESTÁGIO + (vaga a que concorre)”. 3.4. Os documentos escaneados devem constar no mesmo e único e-mail. 4. DA AVALIAÇÃO E DA CLASSIFICAÇÃO FINAL 4.1. A avaliação do Processo Seletivo Público será composta pelas seguintes etapas, obedecida a ordem de ocorrência",
+                "id": "ifba-dgcom-2025:p2",
+                "score": 0.09827,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p2:w150"
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 5,
+                "text": "8.5. A classificação fora do número de vagas disponíveis gera, para o(a) candidato(a), apenas a expectativa de direito à contratação para a vaga de estágio, reservando-se ao IFBA o direito de convocar os(as) estudantes aprovados(as) na medida de suas necessidades, obedecida rigorosamente a ordem de classificação. 8.6. As ocorrências não previstas neste Edital e os casos omissos e/ou duvidosos serão resolvidos pela DGCOM/IFBA, ajustando-se às normas legais. 8.7. As dúvidas referentes ao processo de seleção e seu andamento devem ser encaminhadas ao e-mail dgcom@ifba.edu.br. Documento assinado eletronicamente por HELEN CAROLINE SAMPAIO DOS SANTOS , Diretor(a)",
+                "id": "ifba-dgcom-2025:p5",
+                "score": 0.078385,
+                "retrieval_chunk_id": "ifba-dgcom-2025:p5:w0"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "COMPROVANTE DE RESIDÊNCIA; COMPROVANTE DE MATRÍCULA ATUAL, contendo as seguintes informações: - Nome, CNPJ e endereço com CEP da instituição de ensino; - Assinatura e carimbo do responsável pela instituição; - Nº de matrícula e nome do curso.",
+                "source_id": "ifba-dgcom-2025:p4"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 14722355000,
+              "load_duration": 15832300,
+              "prompt_eval_count": 686,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 17982.03
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": 0,
+          "review_notes": "A citação existe na página, mas não responde ao que foi perguntado. Gabarito congelado: DGP - COTEMP.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-03",
+          "document_id": "ifbaiano-itapetinga-2026",
+          "question": "Se eu enviar duas inscrições, qual delas será válida?",
+          "answerable": true,
+          "expected_pages": [
+            11
+          ],
+          "expected_answer": "A encaminhada por último, com a data de recebimento mais recente.",
+          "result": {
+            "question": "Se eu enviar duas inscrições, qual delas será válida?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "No caso de serem identiﬁcadas duas ou mais inscrições de um mesmo candidato, será considerada válida a inscrição encaminh ada por último ou seja com a data de recebimento mais recente. 4.12. [1]",
+            "sources": [
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 11,
+                "text": "No caso de serem identiﬁcadas duas ou mais inscrições de um mesmo candidato, será considerada válida a inscrição encaminh ada por último ou seja com a data de recebimento mais recente. 4.12.",
+                "id": "ifbaiano-itapetinga-2026:p11",
+                "score": 0.110102,
+                "retrieval_chunk_id": "ifbaiano-itapetinga-2026:p11:w225"
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 21,
+                "text": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO – Campus Itapetinga .. 1. O objeto de contestação refere-se a: _____________________________________________________________ 2. Justiﬁcativa fundamentada: ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ___________________, _____/____/____. Local e Data _________________________________________________ Assinatura ATENÇÃO: Informar o(s) motivo(s) pelo(s) qual(is) o candidato(a) discorda da questão interposta, argumentando e justiﬁcando sua posição.",
+                "id": "ifbaiano-itapetinga-2026:p21",
+                "score": 0.0444,
+                "retrieval_chunk_id": "ifbaiano-itapetinga-2026:p21:w75"
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 18,
+                "text": "do INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO – Campus Itapetinga . 1. O objeto de contestação refere-se ao item: _______________________________________________________________________ 2. Justiﬁcativa fundamentada: ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ________________________________________________________________________ ___________________, _____/____/____. Local e Data _________________________________________________ Assinatura ATENÇÃO: Informar o(s) motivo(s) pelo(s) qual(is) o candidato(a) discorda da questão interposta, argumentando e justiﬁcando sua posição.",
+                "id": "ifbaiano-itapetinga-2026:p18",
+                "score": 0.043444,
+                "retrieval_chunk_id": "ifbaiano-itapetinga-2026:p18:w75"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "No caso de serem identiﬁcadas duas ou mais inscrições de um mesmo candidato, será considerada válida a inscrição encaminh ada por último ou seja com a data de recebimento mais recente. 4.12.",
+                "source_id": "ifbaiano-itapetinga-2026:p11"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 17630473300,
+              "load_duration": 12120800,
+              "prompt_eval_count": 817,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 20187.71
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": 1,
+          "review_notes": "Citação compatível com o gabarito e encontrada na página original. Gabarito congelado: A encaminhada por último, com a data de recebimento mais recente.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-04",
+          "document_id": "ifbaiano-itapetinga-2026",
+          "question": "Qual a pontuação máxima da entrevista para nível superior?",
+          "answerable": true,
+          "expected_pages": [
+            11
+          ],
+          "expected_answer": "60 pontos.",
+          "result": {
+            "question": "Qual a pontuação máxima da entrevista para nível superior?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 13,
+                "text": "os candidatos de NÍVEL MÉDIO a classiﬁcação se dará por meio da pontuação obtida na entrevista. 7.3. Ocorrendo empate entre os candidatos, o desempate se dará conforme os critérios que se seguem, sucessivamente: I - Maior pontuação na entrevista; II - Maior pontuação na análise curricular para o nível superior e Maior pontuação no tópico c onhecimentos especíﬁcos da área de atuação para o nível médio ; III - Maior idade. 7.4. O IF Baiano adota sistemática de preenchimento de vagas que contempla primeiramente a classiﬁcação geral por notas da pontuação da entrevista e, posteriormente,",
+                "id": "ifbaiano-itapetinga-2026:p13:w150",
+                "score": 0.213519
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 22,
+                "text": "MINISTÉRIO DA EDUCAÇÃO SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO CAMPUS ITAPETINGA EDITAL N.º 09 DE 14 DE MAIO DE 2026 SELEÇÃO DE ESTAGIÁRIOS ANEXO VI BAREMA PARA NÍVEL SUPERIOR ESTUDANTE:_____________________________________________________________ ENTREVISTA Critério de Avaliação Pontuação Máxima Pontuação Obtida Conhecimentos especíﬁcos da área de atuação. 40 Justiﬁcativa do interesse pelo estágio, coerente com a área de formação e atribuições do estagiário. 15 Clareza de ideias e uso adequado da língua portuguesa. 05 TOTAL 60 ANÁLISE CURRICULAR ID LATTES:____________________________________ ( ) Válido ( ) Não comprovado Vide Item 5.2.6",
+                "id": "ifbaiano-itapetinga-2026:p22:w0",
+                "score": 0.182156
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 23,
+                "text": "MINISTÉRIO DA EDUCAÇÃO SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO CAMPUS ITAPETINGA EDITAL N.º 09 DE 14 DE MAIO DE 2026 SELEÇÃO DE ESTAGIÁRIOS ANEXO VII BAREMA PARA NÍVEL MÉDIO ESTUDANTE:_____________________________________________________________ ENTREVISTA Critério de Avaliação Pontuação Máxima Pontuação Obtida Conhecimentos especíﬁcos da área de atuação 60 Justiﬁcativa do interesse pelo estágio, coerente com a área de formação e atribuições do estagiário 25 Clareza de ideias e uso adequado da língua portuguesa 15 TOTAL 100 Pontuação - Soma Total:______________ ( ) Apto(a) (Pontuação maior que 41 pontos) ( )",
+                "id": "ifbaiano-itapetinga-2026:p23:w0",
+                "score": 0.169163
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 16808256800,
+              "load_duration": 28572600,
+              "prompt_eval_count": 767,
+              "eval_count": 12,
+              "request_sent": true,
+              "answerable": false,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 19602.99
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": null,
+          "review_notes": "Recusa indevida: o gabarito indica resposta presente no documento. Gabarito congelado: 60 pontos.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-05",
+          "document_id": "ifbaiano-bonfim-2026",
+          "question": "O que define a ordem dos candidatos para as entrevistas?",
+          "answerable": true,
+          "expected_pages": [
+            6
+          ],
+          "expected_answer": "O número de inscrição.",
+          "result": {
+            "question": "O que define a ordem dos candidatos para as entrevistas?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 6,
+                "text": "(dois e meio) na prova escrita. 5.1.2 A entrevista presencial terá valor de até 5,0 (cinco) pontos conforme barema seguinte: Nº Critérios de análise Pontuação Máxima 1 Capacidade argumentativa e comunicativa. 1,5 2 Demonstração de conhecimentos e habilidades na área de atuação do estágio. 2,0 3 Experiências acadêmicas (cursos, projetos de pesquisa, extensão, eventos, dentre outros). 1,5 TOTAL 5,0 5.1.2.1 A ordem para as entrevistas dos(as) candidatos(as) será deﬁnida pelo número de inscrição. 5.1.2.2 A prova escrita e as entrevistas acontecerão presencialmente, e o(a) candidato(a) será informado, antecipadamente, pelo site do IF Baiano Campus Senhor",
+                "id": "ifbaiano-bonfim-2026:p6:w150",
+                "score": 0.219234
+              },
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 4,
+                "text": "apresentado no item 2.1 deste Edital. 4.3. Caberá ao(a) estudante/candidato(a) preencher o formulário de inscrição, conforme cronograma e endereço de link lá disposto. 4.4. As inscrições para participar do processo de seleção são gratuitas. 4.5 Os(as) interessados(as) deverão anexar no formulário de inscrição do Google Forms (h ttps://docs.google.com/forms/d/e/1FAIpQLSd09e1dqtbBIDE7dcA1Tfz_EGMh_1f2fvercczt1-PTIWLo5Q/viewform?usp=publish-editor ), cópia digitalizada dos documentos descritos na ordem abaixo, em arquivo único em formato PDF e que não ultrapasse 10 MB (dez megabytes): I. Documento oﬁcial com foto;",
+                "id": "ifbaiano-bonfim-2026:p4:w600",
+                "score": 0.050522
+              },
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 1,
+                "text": "de reserva para o preenchimento de vagas de estágio que surgirem durante o período de validade da presente seleção. 1.3 O cadastro de reserva será formado pelos (as) estudantes candidatos (as) aprovados (as) no processo seletivo. 1.4 O estágio, desenvolvido no âmbito do IF Baiano, Campus Senhor do Bonﬁm, tem por objetivo proporcionar aos (as) estudantes, regularmente matriculados (as) nas instituições de Ensino Superior, oportunidade de realização de estágio remunerado, observada a disponibilidade orçamentária para a concessão de bolsas, visando ao aprendizado e à complementação da formação acadêmica. 1.5 O processo seletivo será destinado ao",
+                "id": "ifbaiano-bonfim-2026:p1:w225",
+                "score": 0.042782
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 21835805600,
+              "load_duration": 14111900,
+              "prompt_eval_count": 917,
+              "eval_count": 12,
+              "request_sent": true,
+              "answerable": false,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 24832.45
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": null,
+          "review_notes": "Recusa indevida: o gabarito indica resposta presente no documento. Gabarito congelado: O número de inscrição.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-06",
+          "document_id": "ifbaiano-bonfim-2026",
+          "question": "Quais são os dois critérios sucessivos de desempate?",
+          "answerable": true,
+          "expected_pages": [
+            6
+          ],
+          "expected_answer": "Maior pontuação na prova escrita; maior tempo de escolarização no curso matriculado.",
+          "result": {
+            "question": "Quais são os dois critérios sucessivos de desempate?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "DA CLASSIFICAÇÃO E ELIMINAÇÃO 6.1 A classiﬁcação será feita pela soma dos pontos obtidos na prova escrita e entrevista presencial; 6.2 Ocorrendo empate de candidatos (as), o desempate far-se-á conforme os critérios que se seguem, sucessivamente: I. [1]",
+            "sources": [
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 6,
+                "text": "DA CLASSIFICAÇÃO E ELIMINAÇÃO 6.1 A classiﬁcação será feita pela soma dos pontos obtidos na prova escrita e entrevista presencial; 6.2 Ocorrendo empate de candidatos (as), o desempate far-se-á conforme os critérios que se seguem, sucessivamente: I.",
+                "id": "ifbaiano-bonfim-2026:p6",
+                "score": 0.152061,
+                "retrieval_chunk_id": "ifbaiano-bonfim-2026:p6:w300"
+              },
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 4,
+                "text": "apresentado no item 2.1 deste Edital. 4.3. Caberá ao(a) estudante/candidato(a) preencher o formulário de inscrição, conforme cronograma e endereço de link lá disposto. 4.4. As inscrições para participar do processo de seleção são gratuitas. 4.5 Os(as) interessados(as) deverão anexar no formulário de inscrição do Google Forms (h ttps://docs.google.com/forms/d/e/1FAIpQLSd09e1dqtbBIDE7dcA1Tfz_EGMh_1f2fvercczt1-PTIWLo5Q/viewform?usp=publish-editor ), cópia digitalizada dos documentos descritos na ordem abaixo, em arquivo único em formato PDF e que não ultrapasse 10 MB (dez megabytes): I. Documento oﬁcial com foto;",
+                "id": "ifbaiano-bonfim-2026:p4",
+                "score": 0.047823,
+                "retrieval_chunk_id": "ifbaiano-bonfim-2026:p4:w600"
+              },
+              {
+                "document_id": "ifbaiano-bonfim-2026",
+                "title": "IF Baiano Senhor do Bonfim — Estágio 14/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-superior-e-medio-bonfim-abril-2026/wp-content/uploads/sites/1327/2026/04/Edital-no-14.pdf",
+                "page": 7,
+                "text": "desistência tácita em relação à vaga de estágio, resultando na convocação do candidato aprovado, conforme a lista de classiﬁcação do cadastro reserva. 8. DISPOSIÇÕES GERAIS 8.1 O prazo de validade da presente seleção será de 02 (dois) anos, contados a partir da homologação do resultado ﬁnal, podendo ser prorrogado, por igual período, a critério do IF Baiano. 8.2 Este Edital poderá sofrer retiﬁcações sem a prévia comunicação aos (as) candidatos (as). Portanto, é de responsabilidade exclusiva de cada candidato inscrito, acompanhar no site: https://www.ifbaiano.edu.br/unidades/bonﬁm , a publicação de todos os atos e comunicados, especialmente aqueles",
+                "id": "ifbaiano-bonfim-2026:p7",
+                "score": 0.044592,
+                "retrieval_chunk_id": "ifbaiano-bonfim-2026:p7:w0"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "DA CLASSIFICAÇÃO E ELIMINAÇÃO 6.1 A classiﬁcação será feita pela soma dos pontos obtidos na prova escrita e entrevista presencial; 6.2 Ocorrendo empate de candidatos (as), o desempate far-se-á conforme os critérios que se seguem, sucessivamente: I.",
+                "source_id": "ifbaiano-bonfim-2026:p6"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 22118038000,
+              "load_duration": 16598900,
+              "prompt_eval_count": 836,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 24611.47
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": 0,
+          "review_notes": "A citação existe na página, mas não responde ao que foi perguntado. Gabarito congelado: Maior pontuação na prova escrita; maior tempo de escolarização no curso matriculado.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-07",
+          "document_id": "ifbaiano-serrinha-2026",
+          "question": "A declaração de matrícula pode ter sido emitida há quantos dias?",
+          "answerable": true,
+          "expected_pages": [
+            4
+          ],
+          "expected_answer": "Nos últimos 30 dias.",
+          "result": {
+            "question": "A declaração de matrícula pode ter sido emitida há quantos dias?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "III . Declaração de matrícula do curso que está realizando no momento, emi)da nos úl)mos 30 dias; [1]",
+            "sources": [
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 5,
+                "text": "III . Declaração de matrícula do curso que está realizando no momento, emi)da nos úl)mos 30 dias;",
+                "id": "ifbaiano-serrinha-2026:p5",
+                "score": 0.104738,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p5:w150"
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 4,
+                "text": "em arquivo único em formato PDF e que não ultrapasse 10 MB (dez megabytes): I . Documento oﬁcial com foto; II . Cadastro de Pessoa Física (CPF), impresso no site da Receita Federal do Brasil, através do link : h\\ps://servicos.receita.fazenda.gov.br/servicos/cpf/impressaocomprovante/ConsultaImpressao.asp ; III . Declaração de matrícula do curso que está realizando no momento, emi)da nos úl)mos 30 dias; IV . Histórico escolar do curso em que está matriculado (com notas de todos os períodos concluídos); V . Curriculum Vitae ou Currículo La\\es; VI . Laudos referentes ao Programa de Cotas para Pessoas com Deﬁciência, conforme",
+                "id": "ifbaiano-serrinha-2026:p4",
+                "score": 0.097648,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p4:w300"
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 3,
+                "text": "valor do auxílio-transporte será pago em pecúnia por dia, proporcionalmente aos dias efe)vamente estagiados. Para o cálculo do auxílio-transporte, considera-se a proporcionalidade de 22 (vinte e dois) dias no mês. 3.4. Será garan)do seguro contra acidentes pessoais enquanto es)ver nas dependências do IF Baiano Campus Serrinha. 3.5. O estagiário terá que apresentar ao dirigente do setor onde esteja realizando o estágio, semestralmente, declaração da sua Ins)tuição de Ensino, comprovando a condição de estudante.",
+                "id": "ifbaiano-serrinha-2026:p3",
+                "score": 0.045135,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p3:w450"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "III . Declaração de matrícula do curso que está realizando no momento, emi)da nos úl)mos 30 dias;",
+                "source_id": "ifbaiano-serrinha-2026:p5"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 13682034000,
+              "load_duration": 18767300,
+              "prompt_eval_count": 578,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 17356.18
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": 1,
+          "review_notes": "Citação compatível com o gabarito e encontrada na página original. Gabarito congelado: Nos últimos 30 dias.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-08",
+          "document_id": "ifbaiano-serrinha-2026",
+          "question": "Por quanto tempo a seleção permanece válida após a homologação?",
+          "answerable": true,
+          "expected_pages": [
+            10
+          ],
+          "expected_answer": "Dois anos, podendo ser prorrogada por igual período.",
+          "result": {
+            "question": "Por quanto tempo a seleção permanece válida após a homologação?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "DISPOSIÇÕES GERAIS 9.1 O prazo de validade da presente seleção será de 02 (dois) anos, contados a par)r da homologação do resultado ﬁnal, podendo ser prorrogado, por igual período, a critério do IF Baiano. 9.2 Este Edital poderá sofrer re)ﬁcações sem a prévia comunicação aos candidatos. [1]",
+            "sources": [
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 10,
+                "text": "DISPOSIÇÕES GERAIS 9.1 O prazo de validade da presente seleção será de 02 (dois) anos, contados a par)r da homologação do resultado ﬁnal, podendo ser prorrogado, por igual período, a critério do IF Baiano. 9.2 Este Edital poderá sofrer re)ﬁcações sem a prévia comunicação aos candidatos.",
+                "id": "ifbaiano-serrinha-2026:p10",
+                "score": 0.069897,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p10:w75"
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 5,
+                "text": "concluídos); V . Curriculum Vitae ou Currículo La\\es. VI . Quando for o caso, laudos referentes ao Programa de Cotas para Pessoas com Deﬁciência, conforme descrito no item 6. 20 a 25/03/2026 HOMOLOGAÇÃO Divulgação das inscrições homologadas. 26/03/2026",
+                "id": "ifbaiano-serrinha-2026:p5",
+                "score": 0.038442,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p5:w225"
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 7,
+                "text": "RESULTADO DA INTERPOSIÇÃO DE RECURSOS Resultado da interposição de recursos no site. 16/04/2026 CONVOCAÇÃO HETEROIDENTIFICAÇÃO Convocação para banca de heteroiden)ﬁcação. 17/04/2026 BANCA HETEROIDENTIFICAÇÃO Realização da banca de heteroiden)ﬁcação. 21/04/2026 RESULTADOS HETEROIDENTIFICAÇÃO Divulgação do resultado da etapa de heteroiden)ﬁcação. 22/04/2026 RECURSO HETEROIDENTIFICAÇÃO Período de recurso contra o resultado da etapa de heteroiden)ﬁcação 23/04/2026 RESULTADO DOS RECURSOS HETEROIDENTIFICAÇÃO Divulgação do resultado após recursos na etapa de heteroiden)ﬁcação 24/04/2026 RESULTADO FINAL Divulgação no site. 24/04/2026 4.12. O pedido de esclarecimento, de impugnação ou de recurso, para qualquer etapa, deverá ser enviado para o e-mail: selecao@serrinha.i`aiano.edu.br . 5. PROCESSO",
+                "id": "ifbaiano-serrinha-2026:p7",
+                "score": 0.034537,
+                "retrieval_chunk_id": "ifbaiano-serrinha-2026:p7:w0"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "DISPOSIÇÕES GERAIS 9.1 O prazo de validade da presente seleção será de 02 (dois) anos, contados a par)r da homologação do resultado ﬁnal, podendo ser prorrogado, por igual período, a critério do IF Baiano. 9.2 Este Edital poderá sofrer re)ﬁcações sem a prévia comunicação aos candidatos.",
+                "source_id": "ifbaiano-serrinha-2026:p10"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 22637292300,
+              "load_duration": 24730300,
+              "prompt_eval_count": 892,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 24888.18
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": 1,
+          "review_notes": "Citação compatível com o gabarito e encontrada na página original. Gabarito congelado: Dois anos, podendo ser prorrogada por igual período.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-09",
+          "document_id": "ifba-simoes-filho-2026",
+          "question": "Os dias de trabalho presencial e remoto podem ser alterados?",
+          "answerable": true,
+          "expected_pages": [
+            2
+          ],
+          "expected_answer": "Podem ser ajustados com necessidade institucional, compatibilidade acadêmica e comunicação prévia.",
+          "result": {
+            "question": "Os dias de trabalho presencial e remoto podem ser alterados?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 2,
+                "text": "parte legítima para impugnar o presente edital no prazo de que conta no cronograma do item 6.1. 2. DO REGIME DE TRABALHO DO ESTÁGIO 2.1. O estágio objeto deste Processo Seletivo Público será desenvolvido em regime de trabalho híbrido, compreendendo a execução de atividades presenciais e remotas, a serem definidas conforme a natureza das atribuições, o interesse da Administração e as orientações da unidade concedente. 2.2. As atividades remotas serão realizadas por meio de recursos tecnológicos e de comunicação online, devendo o(a) estagiário(a) dispor de infraestrutura necessária para o adequado desempenho das atividades, tais como",
+                "id": "ifba-simoes-filho-2026:p2:w300",
+                "score": 0.100085
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 5,
+                "text": "ou parte Concedente). 9.2. A rescisão por parte do IFBA poderá ser feita de forma imediata em caso de: 9.3. A inscrição do(a) candidato(a) neste Processo Seletivo Público implica no conhecimento e na aceitação de todas as condições estabelecidas neste Edital e nas normas legais pertinentes. Reprovação, abandono ou término do curso acadêmico; Baixo desempenho ou não cumprimento do Plano de Estágio; Comportamento incompatível com os interesses do IFBA e/ou com os princípios éticos e legais da administração pública. a ) b ) c ) Retificação de Publicação 5ª Retificação (4891810) SEI 23283.000039/2026-41 / pg.",
+                "id": "ifba-simoes-filho-2026:p5:w300",
+                "score": 0.026329
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 6,
+                "text": "resolvidos pela Direção Geral do campus junto à Comissão Organizadora do Processo Seletivo, ajustando-se às normas legais. 9.7. As dúvidas referentes ao processo de seleção e seu andamento devem ser encaminhadas ao e-mail < gab_@ifba.edu.br >. Simões Filho, 26 de maio de 2026. Direção Geral Documento assinado eletronicamente por ADRIANA GOMES SANTOS FONSECA , Diretor(a) Geral do Campus Simões Filho , em 26/05/2026, às 13:41, conforme decreto nº 8.539/2015. A autenticidade do documento pode ser conferida no site http://sei.ifba.edu.br/sei/controlador_externo.php? acao=documento_conferir&acao_origem=documento_conferir&id_orgao_acesso_externo=0 informando o código verificador 4891810 e o código CRC 2DA76B3F . 23283.000039/2026-41 4891810v 6 Retificação",
+                "id": "ifba-simoes-filho-2026:p6:w75",
+                "score": 0.017529
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 18516387900,
+              "load_duration": 15689700,
+              "prompt_eval_count": 829,
+              "eval_count": 12,
+              "request_sent": true,
+              "answerable": false,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 21717.47
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": null,
+          "review_notes": "Recusa indevida: o gabarito indica resposta presente no documento. Gabarito congelado: Podem ser ajustados com necessidade institucional, compatibilidade acadêmica e comunicação prévia.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-10",
+          "document_id": "ifba-simoes-filho-2026",
+          "question": "A prova prática também é exigida para a função de designer?",
+          "answerable": true,
+          "expected_pages": [
+            3
+          ],
+          "expected_answer": "A prova prática é apenas para estagiário cadista.",
+          "result": {
+            "question": "A prova prática também é exigida para a função de designer?",
+            "method": "tfidf",
+            "mode": "grounded_quotes",
+            "status": "answered",
+            "answer": "Além disso, o estágio proporcionará ao(à) estudante formação prática supervisionada, possibilitando a aplicação dos conhecimentos acadêmicos em atividades reais, em conformidade com os objetivos educacionais e a legislação vigente. 1.2.1 Estagiário(a) designer justifica-se pela necessidade de apoio às atividades do Setor de Comunicação Social, especialmente na elaboração de peças gráficas e publicações institucionais destinadas aos meios digitais [3]",
+            "sources": [
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 4,
+                "text": "calendário de entrevistas 29/06/2026 09 Entrevistas e Prova prática 01/06/2026 10 Resultado preliminar das entrevistas e prova prática 01/06/2026 11 Prazo para entrar com recurso 02 e 03/06/2026 12 Resultado definitivo e homologação do resultado 05/06/2026 13 Entrega de documentação e assinatura do contrato 08 a 09/06/2026 Retificação de Publicação 5ª Retificação (4891810) SEI 23283.000039/2026-41 / pg. 4",
+                "id": "ifba-simoes-filho-2026:p4",
+                "score": 0.114681,
+                "retrieval_chunk_id": "ifba-simoes-filho-2026:p4:w225"
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 3,
+                "text": "no Anexo IV. 5.3. A Prova Prática para estagiário cadista ocorrerá no Campus do IFBA Simões Filho em um dos laboratórios de informática e será composta de uma prática de desenho de uma planta baixa (arquitetônica) para o AutoCAD. 5.4. Os(as) candidatos(as) aprovados(as) na etapa de análise de documentos serão classificados para a etapa de entrevista individual por ordem decrescente de notas de acordo com a pontuação, cumulativa, obtida em cada etapa de avaliação. Escolaridade 20 (vinte) horas semanais 30 (trinta) horas semanais Nível Superior R$ 1.055,89 R$ 1.508,42 Valor da diária do Auxílio-Transporte R$",
+                "id": "ifba-simoes-filho-2026:p3",
+                "score": 0.077006,
+                "retrieval_chunk_id": "ifba-simoes-filho-2026:p3:w75"
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 2,
+                "text": "Além disso, o estágio proporcionará ao(à) estudante formação prática supervisionada, possibilitando a aplicação dos conhecimentos acadêmicos em atividades reais, em conformidade com os objetivos educacionais e a legislação vigente. 1.2.1 Estagiário(a) designer justifica-se pela necessidade de apoio às atividades do Setor de Comunicação Social, especialmente na elaboração de peças gráficas e publicações institucionais destinadas aos meios digitais",
+                "id": "ifba-simoes-filho-2026:p2",
+                "score": 0.073656,
+                "retrieval_chunk_id": "ifba-simoes-filho-2026:p2:w375"
+              }
+            ],
+            "claims": [
+              {
+                "quote": "Além disso, o estágio proporcionará ao(à) estudante formação prática supervisionada, possibilitando a aplicação dos conhecimentos acadêmicos em atividades reais, em conformidade com os objetivos educacionais e a legislação vigente. 1.2.1 Estagiário(a) designer justifica-se pela necessidade de apoio às atividades do Setor de Comunicação Social, especialmente na elaboração de peças gráficas e publicações institucionais destinadas aos meios digitais",
+                "source_id": "ifba-simoes-filho-2026:p2"
+              }
+            ],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 22406368400,
+              "load_duration": 16350000,
+              "prompt_eval_count": 915,
+              "eval_count": 14,
+              "request_sent": true,
+              "answerable": true,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "latency_ms": 25564.1
+          },
+          "assisted_correctness": 0,
+          "assisted_source_support": 0,
+          "review_notes": "A citação existe na página, mas não responde ao que foi perguntado. Gabarito congelado: A prova prática é apenas para estagiário cadista.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": true
+        },
+        {
+          "id": "test-v2-11",
+          "document_id": "ifba-dgcom-2025",
+          "question": "Qual o valor do reembolso mensal de internet?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Não consta no snapshot.",
+          "result": {
+            "question": "Qual o valor do reembolso mensal de internet?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 3,
+                "text": "4.5. Os(as) candidatos(as) aprovados(as) não convocados(as) para contratação, comporão o cadastro reserva. 4.6. Para se candidatar é necessário possuir acesso e habilidade no uso de computadores, recursos de comunicação online (internet, e-mail, chat e fóruns), ferramentas digitais de apresentação; ter disponibilidade de horários para desenvolver as atividades previstas nas atribuições da função e participar de reuniões de acompanhamento e orientação. 5. DA REALIZAÇÃO DAS ETAPAS DO PROCESSO SELETIVO 5.1. As atividades práticas serão realizadas conforme cronograma e nos horários informados aos candidatos(as), e a fiscalização e acompanhamento serão feitos pela equipe da DGCOM. 5.2. Os",
+                "id": "ifba-dgcom-2025:p3:w0",
+                "score": 0.036895
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 2,
+                "text": "valor de R$ 787,98 (setecentos e oitenta e sete reais e noventa e oito centavos) mensais. 2.2. O(a) estudante contratado(a) receberá ainda Auxílio Transporte no valor de R$ 10,00 (dez reais) por dia de trabalho, seguro contra acidentes pessoais e recesso remunerado de 30 dias por ano (após 12 meses de trabalho). 3. DAS INSCRIÇÕES NO PROCESSO SELETIVO PÚBLICO 3.1. As inscrições no Processo Seletivo Público ocorrerão seguindo calendário no item 5.3. 3.2. Os seguintes documentos são necessários para a realização da inscrição: a) Ficha de Inscrição (Anexo I), devidamente preenchida e assinada; b) Currículo",
+                "id": "ifba-dgcom-2025:p2:w75",
+                "score": 0.03274
+              },
+              {
+                "document_id": "ifba-dgcom-2025",
+                "title": "IFBA DGCOM — Estágio superior 01/2025",
+                "source_url": "https://portal.ifba.edu.br/dgcom/editais/editais/edital-01-2025/SEI_4036075_Edital_IFBA_01_2025.pdf",
+                "page": 1,
+                "text": "(IFBA), consoante autorização da Magnífica Reitora de nº 3927930 do Processo SEI 23278.012130/2024-16, de 02 de janeiro de 2025, e, em atendimento ao disposto na Lei n° 11.788 de 25 de setembro de 2008, na Portaria nº 1.893, de 20 de novembro de 2014, e na Instrução Normativa Nº 213, de 17 de dezembro de 2019, torna público o presente edital do processo seletivo para preenchimento de vagas imediatas e formação de cadastro reserva do seu quadro de estagiários(as) de acordo com as condições a seguir especificadas: 1. DISPOSIÇÕES GERAIS 1.1. O Processo Seletivo Público",
+                "id": "ifba-dgcom-2025:p1:w75",
+                "score": 0.010647
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 19779020200,
+              "load_duration": 14953800,
+              "prompt_eval_count": 874,
+              "eval_count": 12,
+              "request_sent": true,
+              "answerable": false,
+              "candidate_count": 3,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 20099.45
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Não consta no snapshot.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-12",
+          "document_id": "ifbaiano-itapetinga-2026",
+          "question": "Quanto é pago de auxílio-moradia?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Não consta no snapshot.",
+          "result": {
+            "question": "Quanto é pago de auxílio-moradia?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 10,
+                "text": "sido selecionado, será imediatamente desligado do programa de estágio. 3. DA REMUNERAÇÃO E REGIME DE TRABALHO 3.1. O estagiário de nível superior receberá, durante o período em que estiver atuando no estágio, bolsa-auxílio mensal no valor de R$ 1.055,89 (mil e cinquenta e cinco reais e oitenta e nove centavos) para carga horária de 04 (quatro) horas diárias e auxílio- transporte no valor de R$ 13,40 (treze reais e quarenta centavos) diários, nos termos da Instrução Normativa SGP/MGI nº 121, de 27 de março de 2026 , além de garantia de seguro contra acidentes pessoais",
+                "id": "ifbaiano-itapetinga-2026:p10:w375",
+                "score": 0.0786
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 24,
+                "text": "DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO – Campus Itapetinga, regido pelo EDITAL N.º 09 DE 14 DE MAIO DE 2026. ___________________, _____/____/____. Local e Data _________________________________________________ Assinatura do Responsável Legal",
+                "id": "ifbaiano-itapetinga-2026:p24:w75",
+                "score": 0.013113
+              },
+              {
+                "document_id": "ifbaiano-itapetinga-2026",
+                "title": "IF Baiano Itapetinga — Estágio 09/2026",
+                "source_url": "https://www.ifbaiano.edu.br/unidades/itapetinga/files/2026/05/Edital-09.2026-Selecao-de-Estagiarios-de-nivel-Medio-e-Superior-1.pdf",
+                "page": 1,
+                "text": "DE ESTAGIÁRIOS O Diretor Geral INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA BAIANO – CAMPUS ITAPETINGA , no uso de suas atribuições legais, delegadas pela Portaria nº 311 de 19 de março de 2026, publicada no D.O.U de 23 de março de 2026, torna pública a abertura de inscrições destinadas à seleção de estagiários, para atuarem no IF Baiano – Campus Itapetinga, nos termos da Lei n.º 11.788, de 28 de setembro de 2008 e Instrução Normativa n.º 213, de 17 de dezembro de 2019. O presente edital disciplina os procedimentos da seleção de estagiários",
+                "id": "ifbaiano-itapetinga-2026:p1:w75",
+                "score": 0.012393
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "reason": "no_safe_candidates",
+              "request_sent": false
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 14.2
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Não consta no snapshot.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-13",
+          "document_id": "ifbaiano-bonfim-2026",
+          "question": "Quantas pessoas efetivamente assinaram o contrato de estágio?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Não consta no snapshot de abertura.",
+          "result": {
+            "question": "Quantas pessoas efetivamente assinaram o contrato de estágio?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Este acervo contém editais de abertura e retificações, não resultados individuais da seleção. Não posso confirmar essa informação.",
+            "sources": [],
+            "claims": [],
+            "generation_attempted": false,
+            "abstention_reason": "outside_notice_scope",
+            "latency_ms": 0.09
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Não consta no snapshot de abertura.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-14",
+          "document_id": "ifbaiano-serrinha-2026",
+          "question": "Qual versão do Python será cobrada na prova escrita?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Não consta no snapshot.",
+          "result": {
+            "question": "Qual versão do Python será cobrada na prova escrita?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 10,
+                "text": "7.2 Ocorrendo empate de candidatos, o desempate far-se-á conforme os critérios que se seguem, sucessivamente: I. Maior pontuação na prova escrita; II. Maior tempo de escolarização no curso matriculado. 7.3 Será eliminado do certame o candidato que: I . Não comparecer a uma das etapas. A prova escrita e entrevista são de caráter eliminatório e o não comparecimento resultará na eliminação do candidato. II . Tiver escore inferior a 2,5 (dois e meio) na prova escrita. 8. PRAZOS E ASSINATURA DO TERMO DE COMPROMISSO 8.1 A efe)va realização do estágio somente se dará mediante e",
+                "id": "ifbaiano-serrinha-2026:p10:w0",
+                "score": 0.248615
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 6,
+                "text": "INTERPOSIÇÃO DE RECURSOS DAS INSCRIÇÕES HOMOLOGADAS Envio da interposição de recurso via e-mail, conforme formulário anexo ao edital. 27/03/2026 RESULTADO DA INTERPOSIÇÃO DE RECURSOS Resultado da interposição de recursos no site. 30/03/2026 PROVA ESCRITA - CARTA DE INTENÇÕES Realização da prova escrita, no prédio Acadêmico do IF Baiano - Campus Serrinha. 01/04/2026 RESULTADO DA PROVA ESCRITA E DIVULGAÇÃO DE INFORMES SOBRE A ENTREVISTA Divulgação do resultado da prova escrita no e informes sobre a entrevista (local e horário) no site. 07/04/2026 INTERPOSIÇÃO DE RECURSOS DA PROVA ESCRITA Envio da interposição de recurso via e-mail, conforme",
+                "id": "ifbaiano-serrinha-2026:p6:w0",
+                "score": 0.175267
+              },
+              {
+                "document_id": "ifbaiano-serrinha-2026",
+                "title": "IF Baiano Serrinha — Estágio 12/2026",
+                "source_url": "https://concurso.ifbaiano.edu.br/portal/processo-seletivo-estagio-serrinha-marco-2026/wp-content/uploads/sites/1320/2026/03/EDITAL-no-12-de-18-de-marco-de-2026.pdf",
+                "page": 7,
+                "text": "de esclarecimento, de impugnação ou de recurso, para qualquer etapa, deverá ser enviado para o e-mail: selecao@serrinha.i`aiano.edu.br . 5. PROCESSO DE SELEÇÃO 5.1 A seleção dos estagiários será realizada em duas etapas: prova escrita e entrevista presenciais. 5.1.1 A análise da prova escrita terá valor de até 5,0 (cinco) pontos conforme barema seguinte: Nº Critérios de análise Pontuação Máxima 1 Jus)ﬁca)va do interesse pelo estágio coerente com área de formação e atribuições do estagiário. 1,0 2 Uso adequado da língua portuguesa. 2,0",
+                "id": "ifbaiano-serrinha-2026:p7:w75",
+                "score": 0.151046
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "done_reason": "stop",
+              "total_duration": 11981970700,
+              "load_duration": 16963600,
+              "prompt_eval_count": 664,
+              "eval_count": 12,
+              "request_sent": true,
+              "answerable": false,
+              "candidate_count": 4,
+              "reranker": "MiniLM+TF-IDF"
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 13478.44
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Não consta no snapshot.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-15",
+          "document_id": "ifba-simoes-filho-2026",
+          "question": "Qual o nome da candidata selecionada para a vaga de designer?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Editais de abertura não informam resultados individuais.",
+          "result": {
+            "question": "Qual o nome da candidata selecionada para a vaga de designer?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Este acervo contém editais de abertura e retificações, não resultados individuais da seleção. Não posso confirmar essa informação.",
+            "sources": [],
+            "claims": [],
+            "generation_attempted": false,
+            "abstention_reason": "outside_notice_scope",
+            "latency_ms": 0.08
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Editais de abertura não informam resultados individuais.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        },
+        {
+          "id": "test-v2-16",
+          "document_id": "ifba-simoes-filho-2026",
+          "question": "Qual o pagamento mensal de auxílio-creche para estagiários?",
+          "answerable": false,
+          "expected_pages": [],
+          "expected_answer": "Não consta no snapshot.",
+          "result": {
+            "question": "Qual o pagamento mensal de auxílio-creche para estagiários?",
+            "method": "tfidf",
+            "mode": "search",
+            "status": "insufficient_evidence",
+            "answer": "Não encontrei uma resposta explícita e verificável nos trechos consultados. As fontes recuperadas abaixo podem apenas tratar de assuntos relacionados.",
+            "sources": [
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 2,
+                "text": "a compatibilidade com o horário acadêmico do(a) estagiário(a) e a comunicação prévia ao(à) interessado(a). 3. DA REMUNERAÇÃO E OUTROS BENEFÍCIOS 3.1. Conforme Instrução Normativa nº 213 de 17 de dezembro de 2019, a(o) estagiária(o) receberá, a título de bolsa de estágio e auxílio transporte, o valor mensal de: Retificação de Publicação 5ª Retificação (4891810) SEI 23283.000039/2026-41 / pg. 2",
+                "id": "ifba-simoes-filho-2026:p2:w450",
+                "score": 0.155664
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 3,
+                "text": "no Anexo IV. 5.3. A Prova Prática para estagiário cadista ocorrerá no Campus do IFBA Simões Filho em um dos laboratórios de informática e será composta de uma prática de desenho de uma planta baixa (arquitetônica) para o AutoCAD. 5.4. Os(as) candidatos(as) aprovados(as) na etapa de análise de documentos serão classificados para a etapa de entrevista individual por ordem decrescente de notas de acordo com a pontuação, cumulativa, obtida em cada etapa de avaliação. Escolaridade 20 (vinte) horas semanais 30 (trinta) horas semanais Nível Superior R$ 1.055,89 R$ 1.508,42 Valor da diária do Auxílio-Transporte R$",
+                "id": "ifba-simoes-filho-2026:p3:w75",
+                "score": 0.032753
+              },
+              {
+                "document_id": "ifba-simoes-filho-2026",
+                "title": "IFBA Simões Filho — Edital de estágio, 5ª retificação/2026",
+                "source_url": "https://portal.ifba.edu.br/simoes-filho/institucional/processos-seletivos/estagio-externo/estagio-externo-2026/sei_4891810_retificacao_de_publicacao.pdf",
+                "page": 1,
+                "text": "Geral do Campus de Simões Filho do Instituto Federal de Educação, Ciência e Tecnologia da Bahia, IFBA, no uso de suas atribuições legais e regimentais, em atendimento ao disposto na Lei n° 11.788 de 25 de setembro de 2008, na Portaria IFBA nº 1.893, de 20 de novembro de 2014, e na Instrução Normativa Nº 213, de 17 de dezembro de 2019, torna público o presente edital do processo seletivo para preenchimento de vaga imediata e formação de cadastro reserva do seu quadro de estagiários(as) de acordo com as condições a seguir especificadas: 1. DISPOSIÇÕES",
+                "id": "ifba-simoes-filho-2026:p1:w75",
+                "score": 0.021379
+              }
+            ],
+            "claims": [],
+            "generation_attempted": true,
+            "generation": {
+              "model": "llama3.2:3b",
+              "reason": "no_safe_candidates",
+              "request_sent": false
+            },
+            "abstention_reason": "no_supported_answer",
+            "latency_ms": 18.0
+          },
+          "assisted_correctness": 1,
+          "assisted_source_support": null,
+          "review_notes": "Informação ausente no snapshot; recusa adequada. Gabarito congelado: Não consta no snapshot.",
+          "reviewer": "Codex — assistente de IA",
+          "independent_human_review": false,
+          "reviewed_at": "2026-11-02T17:27:13.647502+00:00",
+          "literal_quote_verified": null
+        }
+      ],
+      "summary": {
+        "cases": 16,
+        "answered": 7,
+        "answerable_coverage": 0.7,
+        "unanswerable_abstention": 1,
+        "generation_unavailable": 0,
+        "latency_median_ms": 19489.735,
+        "source_support_review": "assisted; see assisted_review_summary",
+        "correctness_review": "assisted; not independent human review"
+      },
+      "assisted_review_summary": {
+        "reviewed_cases": 16,
+        "correct_cases": 10,
+        "answerable_cases_reviewed": 10,
+        "correct_answerable_cases": 4,
+        "answered_cases_reviewed": 7,
+        "correct_answers_presented": 4,
+        "source_support_cases_reviewed": 7,
+        "source_support_and_relevance": 4,
+        "literal_quotes_verified": 7,
+        "unanswerable_cases_reviewed": 6,
+        "correct_unanswerable_cases": 6,
+        "refusal_mechanisms_all_cases": {
+          "model_abstention": 5,
+          "candidate_filter": 2,
+          "scope_rule": 2
+        },
+        "generation_unavailable": 0,
+        "latency_median_ms": 19489.735,
+        "latency_answered_median_ms": 20187.71,
+        "independent_human_review": false,
+        "review_kind": "assistant comparison with frozen key and PDF text; not independent validation"
+      }
+    }
+  }
+}

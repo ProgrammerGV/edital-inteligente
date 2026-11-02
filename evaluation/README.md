@@ -1,5 +1,7 @@
 # Protocolo de avaliação
 
+Este protocolo descreve a v1. Para a geração local executada na v2, consulte [versões e critérios de revisão](versioning.md) e a [análise dos resultados](../docs/rag-local.md). Os relatórios da v1 foram preservados.
+
 São 30 perguntas anotadas a partir do texto dos PDFs: dez de desenvolvimento e vinte de teste (15 respondíveis e cinco sem resposta). A página é a posição física no PDF, começando em 1. São aceitas páginas alternativas somente quando contêm a informação pedida. Os gabaritos resumem a fonte, sem corrigir o edital.
 
 O documento é selecionado previamente em cada pergunta. Assim, o experimento mede a recuperação de páginas dentro de um edital, não a identificação automática do edital certo. O conjunto é pequeno, anotado durante a implementação e não constitui benchmark externo nem demonstra generalização. Há temas próximos entre desenvolvimento e teste; o teste é uma separação operacional, não uma validação independente.

@@ -14,7 +14,7 @@ Aplicação local de IA aplicada: ingestão de PDFs, recuperação por TF-IDF e 
 - Mantém a busca disponível quando a geração local não está operacional.
 - Avalia recuperação e latência com dez perguntas de desenvolvimento e vinte de teste.
 
-**Estado da geração:** integração Ollama implementada, mas validação com Llama 3.2 1B pendente neste computador. O modo disponível sem Ollama é **busca com evidências**, não um RAG completo validado. Os modelos pré-treinados são integrados; não foi treinado um LLM próprio.
+**Estado: busca avaliada e geração experimental.** Ollama com Llama 3.2 3B foi executado localmente, após experimentos com o 1B. No teste reservado, respondeu corretamente a **4/10 perguntas respondíveis**; apresentou três citações inadequadas e recusou outras três perguntas válidas. Recusou os **6/6 casos sem resposta**. A busca permanece como modo principal; a geração exige ativação e melhorias antes de ser apresentada como RAG completo. Veja a [avaliação, os erros e as latências](docs/rag-local.md). Foram integrados modelos pré-treinados; não foi treinado um LLM próprio.
 
 ## Executar no Windows
 
@@ -52,9 +52,26 @@ Depois do preparo, a aplicação não precisa de internet: o carregamento semân
 
 ## Geração opcional
 
-Instale [Ollama pela fonte oficial](https://ollama.com/download), prepare `ollama pull llama3.2:1b` e mantenha o serviço local ativo. Marque “Consultar modelo local” na interface. A integração usa exclusivamente `127.0.0.1:11434`, sem envio a APIs externas.
+Instale [Ollama pela fonte oficial](https://ollama.com/download). Em outro terminal, mantenha o servidor local ativo:
 
-Para limitar afirmações não sustentadas, a saída do modelo é uma seleção de citações literais: cada trecho precisa existir na fonte recuperada e citar um ID válido. Não é uma síntese livre. Essa validação não garante que a citação seja relevante ou suficiente para responder; a conferência humana continua necessária.
+```powershell
+$env:OLLAMA_NO_CLOUD='1'
+ollama serve
+```
+
+Com o serviço ativo, prepare o modelo e confira a disponibilidade:
+
+```powershell
+ollama pull llama3.2:3b
+.\.venv\Scripts\python scripts/doctor.py
+.\.venv\Scripts\python app.py
+```
+
+Se o aplicativo Ollama já estiver servindo a API local, não inicie uma segunda instância. A interface informa a disponibilidade e permite marcar “Consultar modelo local” para testar a geração experimental. A integração usa exclusivamente `127.0.0.1:11434`, sem envio a APIs externas. O download do 3B ocupa cerca de 2 GB; dependências, embeddings e runtime exigem espaço adicional. Na instalação portátil preparada nesta sessão, `../Iniciar.ps1` utiliza o runtime e os modelos em `work/`.
+
+O modelo 1B é uma alternativa experimental com qualidade inferior observada no desenvolvimento: configure `$env:EDITAL_OLLAMA_MODEL='llama3.2:1b'` antes de iniciar a aplicação, após baixá-lo. Não misturar os resultados dos dois modelos.
+
+Para limitar afirmações não sustentadas, o modelo gera JSON com um ID de evidência; o backend converte esse ID na citação literal. Cada trecho precisa existir na página recuperada e citar um ID válido. Não é uma síntese livre. Essa validação não garante que a citação seja relevante ou suficiente para responder; a conferência humana continua necessária. Há recusas por regras explícitas de escopo, por ausência de candidato apropriado e pelo próprio modelo, registradas separadamente.
 
 ## Arquitetura
 
@@ -69,7 +86,8 @@ flowchart LR
     D --> F[Top 3 páginas]
     E --> F
     F --> G[Interface com fontes]
-    F --> H[Ollama opcional]
+    F --> J[Texto das páginas e 4 candidatos reranqueados]
+    J --> H[Ollama local: ID ou recusa]
     H --> I[Validação de citação literal]
     I --> G
 ```
@@ -97,9 +115,12 @@ python -m pip install -r requirements-dev.txt
 python -m pytest -q
 python scripts/evaluate.py --split dev
 python scripts/evaluate.py --split test
+# Nova avaliação de geração: nomes próprios, sem substituir os relatórios v1.
+python scripts/evaluate_rag.py --split dev-v2 --methods tfidf --output minha-execucao-dev.json
+python scripts/evaluate_rag.py --split test-v2 --methods tfidf --output minha-execucao-test.json
 ```
 
-Consulte [o protocolo](evaluation/README.md), os [relatórios reais](reports/) e o [artigo técnico](docs/artigo.md). Similaridade não é probabilidade de correção. Hit@3 mede recuperação de página, não acerto da resposta. A revisão humana de respostas geradas é uma etapa separada e não recebe valores fictícios.
+Consulte [o protocolo](evaluation/README.md), o [versionamento dos experimentos](evaluation/versioning.md), os [relatórios reais](reports/) e o [artigo técnico v1](docs/artigo.md). Similaridade não é probabilidade de correção. Hit@3 mede recuperação de página, não acerto da resposta. A avaliação v2 registra revisão assistida, identificada como tal; revisão humana independente permanece pendente.
 
 O servidor local usa Waitress e escuta apenas em loopback. Docker é uma alternativa para o modo TF-IDF (`docker build -t edital-inteligente .` e `docker run --rm -p 127.0.0.1:5000:5000 edital-inteligente`). A imagem não inclui MiniLM nem Ollama; esse caminho não substitui a avaliação local.
 

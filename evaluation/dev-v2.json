@@ -1,0 +1,114 @@
+[
+  {
+    "id": "dev-v2-01",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Após doze meses, quantos dias de recesso remunerado estão previstos?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "30 dias por ano, após 12 meses de trabalho."
+  },
+  {
+    "id": "dev-v2-02",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual é o primeiro critério de desempate na classificação?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Maior idade."
+  },
+  {
+    "id": "dev-v2-03",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual documento comprova matrícula no formulário de inscrição?",
+    "answerable": true,
+    "expected_pages": [
+      11
+    ],
+    "expected_answer": "Comprovante de matrícula conforme Anexo III, em PDF, admitido formulário próprio com as informações exigidas."
+  },
+  {
+    "id": "dev-v2-04",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual é a tolerância de atraso para a entrevista presencial?",
+    "answerable": true,
+    "expected_pages": [
+      12
+    ],
+    "expected_answer": "Cinco minutos após o horário marcado."
+  },
+  {
+    "id": "dev-v2-05",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Com que antecedência devo chegar ao local da seleção?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "No mínimo dez minutos, portando documento oficial com foto."
+  },
+  {
+    "id": "dev-v2-06",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "É preciso pagar para se inscrever?",
+    "answerable": true,
+    "expected_pages": [
+      4
+    ],
+    "expected_answer": "As inscrições são gratuitas."
+  },
+  {
+    "id": "dev-v2-07",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Que infraestrutura deve ter o estudante para as atividades remotas?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Computador condizente com os softwares da função e acesso à internet."
+  },
+  {
+    "id": "dev-v2-08",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Para qual endereço de email são enviados os documentos do candidato cadista?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "cgp.sfl@ifba.edu.br."
+  },
+  {
+    "id": "dev-v2-09",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual é o valor mensal do vale-refeição?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  },
+  {
+    "id": "dev-v2-10",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual linguagem de programação será avaliada na entrevista?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  },
+  {
+    "id": "dev-v2-11",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Quem foi contratado depois da seleção?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Editais de abertura não informam resultados individuais."
+  },
+  {
+    "id": "dev-v2-12",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Onde posso comprar ingresso para um show de música?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  }
+]

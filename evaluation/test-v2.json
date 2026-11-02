@@ -1,0 +1,150 @@
+[
+  {
+    "id": "test-v2-01",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Como preencher o assunto do email para enviar a inscrição?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "SELEÇÃO ESTÁGIO + (vaga a que concorre)."
+  },
+  {
+    "id": "test-v2-02",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Em qual setor devem ser entregues os originais dos documentos para contratação?",
+    "answerable": true,
+    "expected_pages": [
+      4
+    ],
+    "expected_answer": "DGP - COTEMP."
+  },
+  {
+    "id": "test-v2-03",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Se eu enviar duas inscrições, qual delas será válida?",
+    "answerable": true,
+    "expected_pages": [
+      11
+    ],
+    "expected_answer": "A encaminhada por último, com a data de recebimento mais recente."
+  },
+  {
+    "id": "test-v2-04",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual a pontuação máxima da entrevista para nível superior?",
+    "answerable": true,
+    "expected_pages": [
+      11
+    ],
+    "expected_answer": "60 pontos."
+  },
+  {
+    "id": "test-v2-05",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "O que define a ordem dos candidatos para as entrevistas?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "O número de inscrição."
+  },
+  {
+    "id": "test-v2-06",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Quais são os dois critérios sucessivos de desempate?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "Maior pontuação na prova escrita; maior tempo de escolarização no curso matriculado."
+  },
+  {
+    "id": "test-v2-07",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "A declaração de matrícula pode ter sido emitida há quantos dias?",
+    "answerable": true,
+    "expected_pages": [
+      4
+    ],
+    "expected_answer": "Nos últimos 30 dias."
+  },
+  {
+    "id": "test-v2-08",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Por quanto tempo a seleção permanece válida após a homologação?",
+    "answerable": true,
+    "expected_pages": [
+      10
+    ],
+    "expected_answer": "Dois anos, podendo ser prorrogada por igual período."
+  },
+  {
+    "id": "test-v2-09",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Os dias de trabalho presencial e remoto podem ser alterados?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Podem ser ajustados com necessidade institucional, compatibilidade acadêmica e comunicação prévia."
+  },
+  {
+    "id": "test-v2-10",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "A prova prática também é exigida para a função de designer?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "A prova prática é apenas para estagiário cadista."
+  },
+  {
+    "id": "test-v2-11",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual o valor do reembolso mensal de internet?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  },
+  {
+    "id": "test-v2-12",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Quanto é pago de auxílio-moradia?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  },
+  {
+    "id": "test-v2-13",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Quantas pessoas efetivamente assinaram o contrato de estágio?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot de abertura."
+  },
+  {
+    "id": "test-v2-14",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Qual versão do Python será cobrada na prova escrita?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  },
+  {
+    "id": "test-v2-15",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Qual o nome da candidata selecionada para a vaga de designer?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Editais de abertura não informam resultados individuais."
+  },
+  {
+    "id": "test-v2-16",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Qual o pagamento mensal de auxílio-creche para estagiários?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot."
+  }
+]

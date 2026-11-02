@@ -2,6 +2,8 @@
 
 **Gabriel Vinicius · 2 de novembro de 2026**
 
+> Este artigo registra a versão v1 de recuperação, preservada em `v0.1-retrieval`. A integração local foi executada posteriormente e tem [avaliação própria na v2](rag-local.md); os números e as pendências descritos abaixo pertencem ao experimento original.
+
 Encontrar um edital é diferente de encontrar a informação certa dentro dele. A partir de um rastreador de publicações, implementei, com assistência de IA, uma aplicação local para consultar PDFs e apresentar a origem de cada trecho recuperado.
 
 ## Pergunta do experimento
