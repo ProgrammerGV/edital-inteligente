@@ -48,7 +48,11 @@ Get-Content data/manifest.json -Raw | ConvertFrom-Json | ForEach-Object {
 .\.venv\Scripts\python scripts/build_corpus.py
 ```
 
-Depois do preparo, a aplicação não precisa de internet: o carregamento semântico usa arquivos locais. Para usar somente TF-IDF, instale `requirements.txt` e omita o download do modelo. O corpus extraído acompanha o código; os PDFs devem ser baixados para abrir a página original.
+Depois do preparo, a aplicação não precisa de internet: o carregamento semântico usa arquivos locais. Para usar somente TF-IDF, instale `requirements.txt` e omita o download do modelo. O corpus extraído e os cinco PDFs oficiais do snapshot avaliado acompanham o código.
+
+### Demonstração em servidor gratuito
+
+O Blueprint `render.yaml` do [repositório do portfólio](https://github.com/ProgrammerGV/programmergv.github.io) prepara a versão TF-IDF, sem instalar MiniLM ou Ollama. O servidor lê a porta `PORT` e aceita `EDITAL_BIND_HOST=0.0.0.0` no ambiente de hospedagem; o padrão local continua em loopback. A configuração foi preparada, mas a ativação da conta e do serviço Render permanece pendente.
 
 ## Geração opcional
 
