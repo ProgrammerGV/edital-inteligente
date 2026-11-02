@@ -1,0 +1,5 @@
+Flask>=3.1,<4
+pypdf>=6,<7
+scikit-learn>=1.7,<2
+requests>=2.32,<3
+waitress>=3,<4

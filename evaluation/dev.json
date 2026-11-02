@@ -1,0 +1,104 @@
+[
+  {
+    "id": "dev-01",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual é o valor mensal da bolsa para vinte horas semanais?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "R$ 787,98 mensais."
+  },
+  {
+    "id": "dev-02",
+    "document_id": "ifba-dgcom-2025",
+    "question": "O estágio será presencial ou remoto?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Presencial em Salvador, na Reitoria do IFBA."
+  },
+  {
+    "id": "dev-03",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual é a bolsa de estágio de nível superior?",
+    "answerable": true,
+    "expected_pages": [
+      10
+    ],
+    "expected_answer": "R$ 1.055,89 por mês."
+  },
+  {
+    "id": "dev-04",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Quando começam e terminam as inscrições?",
+    "answerable": true,
+    "expected_pages": [
+      11,
+      15
+    ],
+    "expected_answer": "19 a 24 de maio de 2026."
+  },
+  {
+    "id": "dev-05",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Quais são as etapas da seleção dos estagiários?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "Prova escrita e entrevista presenciais."
+  },
+  {
+    "id": "dev-06",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Quantas vagas de nível superior estão previstas?",
+    "answerable": true,
+    "expected_pages": [
+      1
+    ],
+    "expected_answer": "Quatro vagas mais cadastro de reserva."
+  },
+  {
+    "id": "dev-07",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Qual a jornada diária e semanal do estágio?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "Quatro horas diárias, vinte horas semanais."
+  },
+  {
+    "id": "dev-08",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Quanto é pago de auxílio-transporte por dia?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "R$ 10,00 por dia."
+  },
+  {
+    "id": "dev-09",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "O estágio permite atividades remotas?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Regime híbrido, com atividades presenciais e remotas."
+  },
+  {
+    "id": "dev-10",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Quando foi publicada a quinta retificação?",
+    "answerable": true,
+    "expected_pages": [
+      1,
+      6
+    ],
+    "expected_answer": "26 de maio de 2026."
+  }
+]

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Encontre informações em editais e confira cada fonte.">
+  <title>Edital Inteligente · Consulte com evidências</title>
+  <link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script>
+</head>
+<body>
+<header><a class="brand" href="/"><span class="brand-icon">ei</span> Edital Inteligente</a><span class="tag">LABORATÓRIO DE IA APLICADA</span></header>
+<main>
+  <section class="intro"><p class="eyebrow"><span class="dot"></span> DOCUMENTOS PÚBLICOS · CONSULTA LOCAL</p>
+    <h1>Uma pergunta.<br><em>As fontes à vista.</em></h1>
+    <p class="lead">Explore editais sem perder o contexto. Encontre os trechos relevantes e confira a página original antes de decidir.</p>
+  </section>
+  <div class="workspace">
+    <aside><div class="aside-top"><p class="eyebrow">SUA BIBLIOTECA</p><span id="count" class="count">—</span></div><h2>Editais disponíveis</h2>
+      <p class="muted">Escolha um documento para uma consulta mais precisa.</p><div id="library" aria-live="polite"><p>Carregando documentos…</p></div>
+      <div class="library-note">Acervo de estudo. Os documentos podem ter prazos encerrados ou retificações posteriores. Confira sempre o órgão responsável.</div>
+    </aside>
+    <section class="query-panel" aria-labelledby="query-title"><div class="panel-head"><span class="step">01 / CONSULTA</span><span class="local-pill">Sem API paga</span></div>
+      <h2 id="query-title">O que você quer encontrar?</h2>
+      <form id="query-form"><label for="document">Documento</label><select id="document"><option value="">Todos os editais</option></select>
+        <label for="question">Sua pergunta</label><textarea id="question" rows="3" minlength="5" maxlength="600" required placeholder="Ex.: Qual é a carga horária semanal do estágio?"></textarea>
+        <div class="examples"><button type="button" data-question="Qual é a carga horária semanal do estágio?">Carga horária</button><button type="button" data-question="Qual é o valor da bolsa de estágio?">Valor da bolsa</button><button type="button" data-question="Quais são as etapas do processo seletivo?">Etapas da seleção</button></div>
+        <div class="options-row"><div><label for="method">Método de busca</label><select id="method"><option value="tfidf">Por palavras · TF-IDF</option><option value="semantic">Por significado · MiniLM</option></select></div><label class="checkbox-label"><input type="checkbox" id="generate"> Consultar modelo local</label></div>
+        <p class="method-note" id="method-note">A busca mostra trechos. A resposta por IA requer o modelo local disponível.</p>
+        <button class="submit" id="submit" type="submit">Encontrar evidências <span aria-hidden="true">↗</span></button>
+      </form>
+      <section id="results" aria-live="polite" aria-atomic="true"><div class="empty"><span class="empty-icon">⌕</span><h3>Comece por uma pergunta</h3><p>A resposta e as páginas de origem aparecerão aqui.</p></div></section>
+    </section>
+  </div>
+  <section class="principles"><div><span>01</span><h3>Confira a origem</h3><p>Documento, trecho e página em cada resultado.</p></div><div><span>02</span><h3>Entenda o limite</h3><p>Similaridade não é garantia de uma resposta correta.</p></div><div><span>03</span><h3>Preserve o contexto</h3><p>Consulte o edital completo e suas retificações.</p></div></section>
+</main><footer><span>Edital Inteligente / por Gabriel Vinicius</span><span>Software, busca e avaliação de IA.</span></footer>
+</body></html>

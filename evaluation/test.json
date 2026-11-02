@@ -1,0 +1,193 @@
+[
+  {
+    "id": "test-01",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual o período das inscrições previsto no cronograma?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "07/01 a 16/02/2025."
+  },
+  {
+    "id": "test-02",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Quais etapas compõem a avaliação do processo seletivo?",
+    "answerable": true,
+    "expected_pages": [
+      2
+    ],
+    "expected_answer": "Análise de documentos; entrevista individual e atividade prática."
+  },
+  {
+    "id": "test-03",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Por quanto tempo o processo seletivo terá validade?",
+    "answerable": true,
+    "expected_pages": [
+      1
+    ],
+    "expected_answer": "12 meses, prorrogável por igual período."
+  },
+  {
+    "id": "test-04",
+    "document_id": "ifba-dgcom-2025",
+    "question": "Qual foi a nota final do primeiro colocado nesta seleção?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot do edital."
+  },
+  {
+    "id": "test-05",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual a duração inicial e a duração máxima do estágio?",
+    "answerable": true,
+    "expected_pages": [
+      1
+    ],
+    "expected_answer": "Até um ano, prorrogável por igual período, máximo dois anos."
+  },
+  {
+    "id": "test-06",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "O candidato precisa pagar pela inscrição?",
+    "answerable": true,
+    "expected_pages": [
+      11
+    ],
+    "expected_answer": "As inscrições são gratuitas."
+  },
+  {
+    "id": "test-07",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual formato de currículo deve apresentar o candidato de nível superior?",
+    "answerable": true,
+    "expected_pages": [
+      12
+    ],
+    "expected_answer": "Currículo CNPq Lattes impresso, atualizado e acompanhado de comprovantes."
+  },
+  {
+    "id": "test-08",
+    "document_id": "ifbaiano-itapetinga-2026",
+    "question": "Qual é o número de candidatos que efetivamente compareceram à entrevista?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot do edital."
+  },
+  {
+    "id": "test-09",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Qual é o prazo inicial do contrato de estágio e o limite de renovação?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "Seis meses, renovável por igual período até dois anos."
+  },
+  {
+    "id": "test-10",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Qual é a nota mínima da prova escrita para poder fazer a entrevista?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "2,5 pontos."
+  },
+  {
+    "id": "test-11",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "O estudante precisa apresentar declaração de matrícula com qual frequência?",
+    "answerable": true,
+    "expected_pages": [
+      4
+    ],
+    "expected_answer": "Semestralmente."
+  },
+  {
+    "id": "test-12",
+    "document_id": "ifbaiano-bonfim-2026",
+    "question": "Qual pessoa foi contratada depois do resultado final?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot do edital."
+  },
+  {
+    "id": "test-13",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Qual o período de inscrição e o horário limite?",
+    "answerable": true,
+    "expected_pages": [
+      4,
+      5
+    ],
+    "expected_answer": "20/03/2026 a 25/03/2026, até 23h59min."
+  },
+  {
+    "id": "test-14",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Qual o tamanho máximo do arquivo PDF enviado com os documentos?",
+    "answerable": true,
+    "expected_pages": [
+      4
+    ],
+    "expected_answer": "10 MB."
+  },
+  {
+    "id": "test-15",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Depois da convocação, quantos dias úteis o selecionado tem para se apresentar?",
+    "answerable": true,
+    "expected_pages": [
+      10
+    ],
+    "expected_answer": "Cinco dias úteis."
+  },
+  {
+    "id": "test-16",
+    "document_id": "ifbaiano-serrinha-2026",
+    "question": "Quantos inscritos foram aprovados na prova escrita desta seleção?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot do edital."
+  },
+  {
+    "id": "test-17",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Qual a diária do auxílio-transporte informada na tabela?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "R$ 13,40."
+  },
+  {
+    "id": "test-18",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Quais são as etapas para a seleção de estagiário cadista?",
+    "answerable": true,
+    "expected_pages": [
+      3
+    ],
+    "expected_answer": "Análise de documentos, entrevista individual e prova prática."
+  },
+  {
+    "id": "test-19",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "A classificação fora do número de vagas garante contratação?",
+    "answerable": true,
+    "expected_pages": [
+      6
+    ],
+    "expected_answer": "Gera expectativa de direito, sem garantia de contratação."
+  },
+  {
+    "id": "test-20",
+    "document_id": "ifba-simoes-filho-2026",
+    "question": "Qual foi a nota individual do candidato aprovado para cadista?",
+    "answerable": false,
+    "expected_pages": [],
+    "expected_answer": "Não consta no snapshot do edital."
+  }
+]
