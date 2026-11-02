@@ -138,3 +138,10 @@ def test_pdf_is_served_without_blocking_browser_viewer(index, tmp_path):
     assert response.mimetype == 'application/pdf'
     assert response.data.startswith(b'%PDF')
     assert 'Content-Security-Policy' not in response.headers
+
+
+def test_health_identifies_deployed_commit(index, monkeypatch):
+    monkeypatch.setenv('RENDER_GIT_COMMIT', 'a' * 40)
+    response = create_app(index).test_client().get('/api/health')
+    assert response.status_code == 200
+    assert response.json['commit'] == 'a' * 40

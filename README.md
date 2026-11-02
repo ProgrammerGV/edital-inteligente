@@ -134,3 +134,8 @@ O servidor local usa Waitress e escuta apenas em loopback. Docker é uma alterna
 - [Progresso e critérios de aceite](docs/progresso.md)
 - [Roteiro de demonstração](docs/demo.md)
 - [Modelo de embeddings](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) — parâmetros pré-treinados, não treinamento próprio.
+
+
+## GitHub Actions
+
+Os testes são executados automaticamente em pushes e pull requests para `main`. Consulte [CI e publicação](docs/cicd.md) para o funcionamento e o estado da integração com o Render.

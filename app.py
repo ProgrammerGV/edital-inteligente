@@ -44,7 +44,8 @@ def create_app(index=None, root=ROOT):
 
     @app.get('/api/health')
     def health():
-        return jsonify(status='ok', documents=len(get_index().corpus['documents']), generation=generation_status())
+        return jsonify(status='ok', documents=len(get_index().corpus['documents']), generation=generation_status(),
+                       commit=os.environ.get('RENDER_GIT_COMMIT'))
 
     @app.get('/documents/<document_id>.pdf')
     def pdf(document_id):
