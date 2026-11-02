@@ -52,7 +52,7 @@ Depois do preparo, a aplicação não precisa de internet: o carregamento semân
 
 ### Demonstração em servidor gratuito
 
-O Blueprint `render.yaml` do [repositório do portfólio](https://github.com/ProgrammerGV/programmergv.github.io) prepara a versão TF-IDF, sem instalar MiniLM ou Ollama. O servidor lê a porta `PORT` e aceita `EDITAL_BIND_HOST=0.0.0.0` no ambiente de hospedagem; o padrão local continua em loopback. A configuração foi preparada, mas a ativação da conta e do serviço Render permanece pendente.
+O Blueprint `render.yaml` do [repositório do portfólio](https://github.com/ProgrammerGV/programmergv.github.io) prepara a versão TF-IDF, sem instalar MiniLM ou Ollama. O servidor lê a porta `PORT` e aceita `EDITAL_BIND_HOST=0.0.0.0` no ambiente de hospedagem; o padrão local continua em loopback. A demonstração está publicada em https://programmergv-edital-inteligente.onrender.com/ no plano Free, com busca TF-IDF e os cinco PDFs. O primeiro acesso após inatividade pode demorar enquanto o servidor desperta.
 
 ## Geração opcional
 
