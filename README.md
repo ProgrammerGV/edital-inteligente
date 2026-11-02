@@ -130,5 +130,3 @@ O servidor local usa Waitress e escuta apenas em loopback. Docker é uma alterna
 - [Progresso e critérios de aceite](docs/progresso.md)
 - [Roteiro de demonstração](docs/demo.md)
 - [Modelo de embeddings](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) — parâmetros pré-treinados, não treinamento próprio.
-
-Projeto de portfólio e estudo, sem vínculo com iFood ou com os órgãos dos editais. Não há comprovação de usuários em produção ou horas economizadas. A implementação contou com assistência de IA.
