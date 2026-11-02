@@ -123,3 +123,18 @@ def test_api_and_security_headers(index):
 def test_request_size_limit(index):
     response = create_app(index).test_client().post('/api/ask', json={'question': 'a' * 9000})
     assert response.status_code == 413
+
+
+def test_pdf_is_served_without_blocking_browser_viewer(index, tmp_path):
+    from pypdf import PdfWriter
+    folder = tmp_path / 'data/pdfs'
+    folder.mkdir(parents=True)
+    writer = PdfWriter()
+    writer.add_blank_page(width=100, height=100)
+    writer.write(folder / 'alfa.pdf')
+    client = create_app(index, root=tmp_path).test_client()
+    response = client.get('/documents/alfa.pdf')
+    assert response.status_code == 200
+    assert response.mimetype == 'application/pdf'
+    assert response.data.startswith(b'%PDF')
+    assert 'Content-Security-Policy' not in response.headers

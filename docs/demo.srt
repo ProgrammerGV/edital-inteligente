@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:06,000
+Edital Inteligente: biblioteca de cinco editais. Sequência de capturas reais, sem gravação contínua.
+
+2
+00:00:06,000 --> 00:00:12,000
+Consulta semântica local: trecho recuperado, documento e página para conferência.
+
+3
+00:00:12,000 --> 00:00:18,000
+Pergunta ambígua: o sistema pede que o usuário esclareça qual edital deseja consultar.
